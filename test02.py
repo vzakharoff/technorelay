@@ -69,7 +69,7 @@ add_lic = "/html/body/div/div[1]/div/div/form/form/div[2]/button"
 # Open browser
 driver = webdriver.Firefox()
 driver.maximize_window()
-driver.get("https://"+testLogin+":"+testPwd+"@Abc@test-qa.technorely.com/admin/create-provider")
+driver.get("https://"+testLogin+":"+testPwd+"@test-qa.technorely.com/admin/create-provider")
 # direct link could not be open for some reason (mb bug)
 
 # log in
@@ -165,7 +165,7 @@ driver.find_element_by_xpath("/html/body/div/div[1]/div/div/form/div[21]/div/but
 #timeout to observe the result!
 driver.implicitly_wait(10)
 
-driver.close()
+##driver.close() ## commented to observe the result
 
 #done :D
 #pprint("Done.")
